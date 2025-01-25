@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider demos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .container {
+            padding-left: 195px;
+            padding-right: 195px;
+            max-width: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .alternative__wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+
+        .alternative__main {
+            position: relative;
+            z-index: 1;
+        }
+
+        .alternative__img {
+            width: 86px;
+        }
+
+        .alternative__fuel__main {
+            padding: 41px 44px;
+            background-color: #fff;
+            border-radius: 30px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        .alternative__content h4 {
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;
+            color: #F1A500;
+        }
+
+        .alternative__content p {
+            font-family: 'Poppins';
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 29px;
+            color: #000;
+        }
+
+        .alternative__abs__img {
+            width: 642px;
+            position: absolute;
+            top: 115px;
+            left: 428px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img3.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img1.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img2.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img3.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img1.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img2.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img3.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img1.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="alternative__fuel__main">
+                        <div class="alternative__img"><img src="image/alternative-img2.svg"></div>
+                        <div class="alternative__content">
+                            <h4>Fuels</h4>
+                            <p>Compressed
+                                <span>Natural Gas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
